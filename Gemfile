@@ -30,7 +30,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development do
+group :development, :test do
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -44,12 +44,24 @@ gem 'sqlite3'
   gem 'spring'
 
   gem 'rspec-rails', '2.13.1'
+
+  gem 'guard', '2.6.1'
+
+  gem 'guard-rspec', '2.5.0'
+
+  gem 'spork-rails', '4.0.0'
+
+  gem 'guard-spork', '1.5.0'
+
+  gem 'childprocess', '0.5.6'
 end
 
 group :test do
   gem 'selenium-webdriver', '2.35.1'
   gem 'capybara', '2.1.0'
   gem 'test-unit'
+
+  gem 'growl', '1.0.3'
 end
 
 group :production do
