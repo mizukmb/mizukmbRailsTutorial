@@ -34,6 +34,8 @@ gem 'bootstrap-sass', '2.3.2.0'
 
 gem 'sprockets'
 
+gem 'bcrypt-ruby'
+
 group :development, :test do
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
