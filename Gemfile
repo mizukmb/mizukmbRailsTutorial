@@ -68,6 +68,7 @@ group :test do
   gem 'test-unit'
 
   gem 'growl', '1.0.3'
+  gem 'factory_girl_rails'
 end
 
 group :production do
